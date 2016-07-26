@@ -26,6 +26,6 @@ else:
                 output = []
                 for field in line.strip().split(","):
                     if field != '""' and len(field) > 0:
-                        output.append('{}="{} "'.format(columns[idx], transform(field)))
+                        output.append('{}="{}" '.format(columns[idx], transform(field)))
                     idx += 1
                 print("".join(output))
